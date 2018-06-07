@@ -1,15 +1,8 @@
-//////////////////////////////////////////////////////////////
-//
-// Your #includes here; make sure you are allowed them ...
-//
 
 
 #include <fstream>
 
-//////////////////////////////////////////////////////////////
-//
-// #includes and function declarations; do not remove
-//
+
 
 #ifndef MARMOSET_TESTING
 #include <iostream>
