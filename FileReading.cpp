@@ -1,38 +1,16 @@
 
 
 #include <fstream>
-
-
-
-#ifndef MARMOSET_TESTING
 #include <iostream>
 
 using namespace std;
-#endif
 
-//////////////////////////////////////////////////////////////
-//
-// Function declarations; do not remove
-// Replace "..." in bisectionHelper() with any parameter(s)
-// you need to ensure termination when precision and
-// minIntervalSize are too tightly specified.
-//
 
 int histogram(const char filename[], int histogram[10],
               const int minAcceptableID, const int maxAcceptableID,
               int*& rejects);
 
-//////////////////////////////////////////////////////////////
-//
-// Your code here ...
-//
-// Return -1 if you cannot compute the histogram for any
-// reason;
-// Return 0 if the histogram is correct and there are no
-// rejections;
-// Return the number of rejects if there are rejected
-// records from the file
-//
+
 
 int histogram(const char filename[], int histogram[10],
               const int minAcceptableID, const int maxAcceptableID,
@@ -341,22 +319,13 @@ else if(value1>=90&&value1<=100)
 return count;
 }
 
-//////////////////////////////////////////////////////////////
-//
-// Test Driver
-//
-// Do not remove the #ifndef and its associated #endif
-// This is required so that when you submit your code,
-// this test driver will be ignored by Marmoset
-//
 
-#ifndef MARMOSET_TESTING
 
 #define isNaN(X) (X != X)  // NaN is the only float that is not equal to itself
 
 int main(const int argc, const char* const argv[]) {
 
-  // Some test driver code here ....
+
   if (argc < 2) {
 
   }
@@ -383,4 +352,4 @@ int main(const int argc, const char* const argv[]) {
     return 0;
 }
 
-#endif
+
